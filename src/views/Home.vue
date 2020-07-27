@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Random Counter</h1>
+    <h1>Random Counter by Alex Sms</h1>
     <h2>Counter {{ counter }}</h2>
     <button id="increment" @click="increment">Increment</button>
     <button id="decrement" @click="decrement">Decrement</button>
