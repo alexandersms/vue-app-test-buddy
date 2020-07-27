@@ -2,7 +2,7 @@
   <div class="home">
     <h1>Random Counter by Alex Sms</h1>
     <h2>Counter {{ counter }}</h2>
-    <h2>Let's Go 1</h2>
+    <h2>Let's Go</h2>
     <button id="increment" @click="increment">Increment</button>
     <button id="decrement" @click="decrement">Decrement</button>
   </div>
