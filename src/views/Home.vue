@@ -1,18 +1,37 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>Random Counter</h1>
+    <h2>Counter {{ counter }}</h2>
+    <button id="increment" @click="increment">Increment</button>
+    <button id="decrement" @click="decrement">Decrement</button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    HelloWorld
+  data() {
+    return {
+      counter: 0
+    };
+  },
+  methods: {
+    increment() {
+      this.counter++;
+    },
+    decrement() {
+      if (this.counter <= 0) {
+        this.counter = 0;
+      } else {
+        this.counter--;
+      }
+    }
   }
 };
 </script>
+
+<style scoped>
+button {
+  cursor: pointer;
+}
+</style>
